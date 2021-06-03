@@ -1,0 +1,41 @@
+Proposal for Project 2 - Linear Regression module
+
+
+Question/need:
+
+What is the framing question of your analysis, or the purpose of the model/system you plan to build?
+How the domestic gross of the movie depends on the different features of the movie, main focus on the movies with female directors or female lead actresses
+
+Who benefits from exploring this question or building this model/system?
+We will see a wider picture how succesfull female directed movies or movies with female lead actress are compare to movies with male directors/lead actors. Gender diversifity is a very important topic in the movie industry (and in a lot of other industries as well) so I think any additional information about the current situation and maybe prediction of the future success of the female lead movies are highly valuable.
+
+
+Data Description:
+
+What dataset(s) do you plan to use, and how will you obtain the data?
+I will use data from Mojo Office Box, and will get data with BeautifulSoup from the website
+
+What is an individual sample/unit of analysis in this project? What characteristics/features do you expect to work with?
+Individual sample is one movie, the initial features what I am planning to use are the following:
+- Gross Domestic
+- Gross International
+- Gross Worldwide
+- In release
+- Runing Time
+- Widest Release
+- Cast and Crew information:
+ - Director
+ - Lead actor/actress
+- MPAA rating
+- IMDB rating
+- Genre
+- Domestic Distributor
+
+
+Tools:
+
+How do you intend to meet the tools requirement of the project?
+I would like to use BeautifulSoup to web scraping and then use SQL, Python Pandas for data manipulations
+
+Are you planning in advance to need or use additional tools beyond those required?
+I don't plan to use any additional tools
