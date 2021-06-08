@@ -1,0 +1,15 @@
+The aim of the project to discover a selected features effect on a movie's total gross. One of the factor represents the gender of the directors what the project handle with particular attention.
+
+At the current status of the project data was collected from Box Office Mojo about avor 4000 movies for the following features: domestic_gross', 'international_gross', 'running_time', 'release_date',
+       'MPAA', 'distributor', 'in_release_days', 'genres', 'budget',
+       'director', 'Op_weekend_gr', 'theatre'.
+
+After data cleaning and some initial data engineering the below linear regression model was created with the numeric form of the exported features:
+
+!Traffic plot[Diagnostic plot](https://raw.githubusercontent.com/NemeGabi/Regression_Course_Project/master/Diagnostic_plot.png)
+
+
+The model making discovered that the "in release" days have less whilst the number of theatres have more importancy then it was expected.
+
+The model needs further data engineering to synchronize the model more on the data.
+
