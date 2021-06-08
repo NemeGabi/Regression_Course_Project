@@ -6,7 +6,7 @@ At the current status of the project data was collected from Box Office Mojo abo
 
 After data cleaning and some initial data engineering the below linear regression model was created with the numeric form of the exported features:
 
-!Traffic plot[Diagnostic plot](https://raw.githubusercontent.com/NemeGabi/Regression_Course_Project/master/Diagnostic_plot.png)
+![Diagnostic plot](https://raw.githubusercontent.com/NemeGabi/Regression_Course_Project/master/Diagnostic_plot.png)
 
 
 The model making discovered that the "in release" days have less whilst the number of theatres have more importancy then it was expected.
