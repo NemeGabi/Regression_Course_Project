@@ -1,0 +1,54 @@
+Regression Course Project
+
+Movie revenue analysis with gender issue research
+
+The goal of the project is to help a newly launched film making company to choose what feature of the movie take the biggest part in the increase or decrease of a movie. The company highlighted their interest in the movies with female director, if that feature makes a significant changes in the total gross of the movie. 
+
+To the model we create we collect data from websites and try to find the best model which covers the most errors. To validate the model fit we will use training-validation-test set.
+
+
+Design
+
+Movie industry is a very succesful one, which attracts many people to be part of it. Nowadays, due to the internet given opportunities, huge amount of information are available about movies, data of the movie making process and the resulted success in figures.
+Our client are owners of newly launched film making company which still figuring out what profile movies, do they want to make. The project's goal is to recommend which features are important in the success of the movie worldwide.
+
+
+Data
+
+Data was collected from Box Office Mojo website with webscrapping. Additional information, like list of female directors were scraped from Wikipedia.
+
+In total 4071 movies data were scrapped and only the outliers were dropped from the list so the model was built for over 4000 movies' features.
+The choosen target was the total gross what the movie makes, selected features are: 
+	- total gross,
+	- running time,
+	- budget,
+	- openning theatre,
+	- distributor
+	- genres (thriller, comedy, drama, romance, action)
+	- release date (peak season or not)
+	- MPAA ratings (G, NC-17, Not Rated, PG, PG-13, R)
+	- director's gender
+
+Target was transformed with log transformation so the target's distribution got closer to normal and the results are easier to read.
+
+
+
+Algorithm:
+
+For baseline model linear regression was chosen, resulted an r score of 0.54 on the training data and 0.49 on the validation set. 
+Several different method was tried to boost the score of the model, as adding polynomial features or add/discard features depending on their correlation to the target. Polynomial features made the model too complex and did not increased the r score in a rate to the complexity increase would be accepted - even after Lasso regularization.
+
+The best working model was a simple linear regression with the right feature set which resulted a r score 0.56.
+
+
+
+Tools:
+
+Webscrapping: BeautyfulSoup
+Data manipulation: Python pandas, Scikit-learn, Statsmodel, Numpy, Genderdise
+Data visualisation: Matplotlib, Seaborn 
+
+Communication
+
+
+
